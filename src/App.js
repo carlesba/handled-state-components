@@ -16,26 +16,7 @@ class App extends Component {
     return (
       <div>
         <Module>
-          <Header
-            value={this.state.header}
-            handleChangeTitle={(value) => {
-              if (value.length > 10) return
-              this.setState({
-                header: this.state.header.updateTitle(value)
-              })
-            }}
-          />
-        </Module>
-        <Module>
-          <input
-            type='text'
-            value={this.state.header.getTitle()}
-            onChange={evt => {
-              this.setState({
-                header: this.state.header.updateTitle(evt.target.value)
-              })
-            }}
-          />
+          <Header />
         </Module>
       </div>
     )
