@@ -26,17 +26,6 @@ class App extends Component {
             }}
           />
         </Module>
-        <Module>
-          <input
-            type='text'
-            value={this.state.header.getTitle()}
-            onChange={evt => {
-              this.setState({
-                header: this.state.header.updateTitle(evt.target.value)
-              })
-            }}
-          />
-        </Module>
       </div>
     )
   }
